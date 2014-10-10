@@ -21,3 +21,7 @@ fip_obj = lib.floating_ip_read(id=fip_obj.uuid)
 port_obj = lib.virtual_machine_interface_read(id='<port-uuid>')
 fip_obj.add_virtual_machine_interface(port_obj)
 lib.floating_ip_update(fip_obj)
+
+# to delete
+fip_obj.del_virtual_machine_interface(port_obj)
+lib.floating_ip_delete(fip_obj)
