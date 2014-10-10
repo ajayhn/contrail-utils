@@ -11,7 +11,7 @@ lib.project_update(proj_obj)
 
 # create fip
 fip_name = str(uuid.uuid4())
-fip_obj = vnc_api.FloatingIp(fip_name, fip_pool_obj)
+fip_obj = vnc_api.FloatingIp(fip_name, fip_pool_obj, <floating_ip_address='<fip-ip>'>)
 proj_obj = lib.project_read(fq_name=['<domain>', '<user-proj>'])
 fip_obj.set_project(proj_obj)
 lib.floating_ip_create(fip_obj)
