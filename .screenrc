@@ -1,0 +1,21 @@
+escape `e
+
+# No bell at all
+vbell off
+
+# Change default scrollback value for new windows
+defscrollback 20000
+
+# Pretty status bar at the bottom
+caption always "%w"
+
+bind p command -c paste_class
+bind -c paste_class 1 paste 1
+bind -c paste_class 2 paste 2
+bind -c paste_class 3 paste 3
+bind -c paste_class 4 paste 4
+bind -c paste_class 5 paste 5
+bind -c paste_class 6 paste 6
+bind -c paste_class 7 paste 7
+bind -c paste_class 8 paste 8
+bind -c paste_class 9 paste 9
